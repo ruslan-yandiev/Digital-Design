@@ -1,0 +1,102 @@
+@import 'color.scss';
+@import 'mixins.scss';
+
+// ========================= Переменные ===============================/
+$minwidth: 320px;
+
+// * Общая ширина контейнера с контентом для всего ресурса
+$mw: 1200;
+$md1: $mw+12;
+$md2: 918.98;
+$md3: 767.98;
+$md4: 479.98;
+//--------------------------/Переменные/ ------------------------------/
+
+body {
+    font-family: 'Montserrat_400', sans-serif;
+    color: $Dark_Shade_75;
+    font-size: 14px;
+    line-height: 24px;
+
+    &._lock {
+        @media (max-width: $md2+px) {
+            overflow: hidden;
+        }
+    }
+}
+
+h1 {
+    color: $Dark_Shade_100;
+    font-family: 'Montserrat_700', sans-serif;
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+h2 {
+    color: $Dark_Shade_100;
+    font-family: 'Montserrat_700', sans-serif;
+    font-size: 19px;
+    line-height: 23.16px;
+}
+
+h3 {
+    font-family: 'Montserrat_700', sans-serif;
+    font-size: 12px;
+    line-height: 14.63px;
+    text-transform: uppercase;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// =======================================
+
+// ============================ Оболочка ===================================/
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+//------------------------------/Оболочка/ -------------------------------/
+
+// ============================ Основная сетка =========================/
+._container {
+    max-width: $mw + px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    // @media (max-width: $md1+px) {
+    //     max-width: 970px;
+    // }
+
+    // @media (max-width: $md2+px) {
+    //     max-width: 750px;
+    // }
+
+    // @media (max-width: $md3+px) {
+    //     max-width: none;
+    //     padding: 0 10px;
+    // }
+}
+
+//------------------------------/Основная сетка/--------------------------/
+
+.code {
+    color: fuchsia;
+}
+
+.content-wrapper {
+    background-color: rgb(218, 165, 115);
+}

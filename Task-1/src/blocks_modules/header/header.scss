@@ -21,7 +21,7 @@
         display: flex;
         z-index: 2;
 
-        @media (max-width: 561px) {
+        @media (max-width: $md2+px) {
             margin-right: 30px;
         }
     }

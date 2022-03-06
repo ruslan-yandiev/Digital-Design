@@ -15,11 +15,12 @@ html(lang="en")
 
   body(class=pageClass)
     .wrapper
-      //- подключим хедер
+      //- хедер
+      include ../blocks_modules/header/header
 
       main(class=mainClass, style=mainStyle)
         .wrapper-content
-          //- основной контент
+          //- контент
           block content
 
       //- подключим футер

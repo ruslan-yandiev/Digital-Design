@@ -1,0 +1,36 @@
+@import '../../styles/style.scss';
+
+.table-of-contentes {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $Purple;
+    }
+
+    a {
+        display: block;
+        padding: 5px;
+
+        &:hover {
+            background-color: $Purple;
+            color: $white;
+        }
+    }
+
+    @media (min-width: 1100px) {
+        max-width: 300px;
+        position: fixed;
+        right: 20px;
+
+        border-left: 2px solid $Dark_Shade_25;
+
+        ul {
+            display: block;
+            border: 0px;
+        }
+    }
+}

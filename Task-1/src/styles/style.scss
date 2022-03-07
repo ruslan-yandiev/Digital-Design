@@ -5,7 +5,7 @@
 $minwidth: 320px;
 
 // * Общая ширина контейнера с контентом для всего ресурса
-$mw: 1200;
+$mw: 1400;
 $md1: $mw+12;
 $md2: 918.98;
 $md3: 767.98;
@@ -65,8 +65,8 @@ a {
     width: 100%;
     min-height: 100%;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 }
 
 //------------------------------/Оболочка/ -------------------------------/
@@ -75,7 +75,7 @@ a {
 ._container {
     max-width: $mw + px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 
     // @media (max-width: $md1+px) {
     //     max-width: 970px;
@@ -92,3 +92,32 @@ a {
 }
 
 //------------------------------/Основная сетка/--------------------------/
+.wrapper-content {
+    max-width: 78%;
+    margin: 60px 0px 40px 0px;
+
+    @media (max-width: 1100px) {
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+}
+
+.content {
+    word-break: break-all;
+    overflow: hidden;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-left: 1px solid $Dark_Shade_25;
+    padding: 10px;
+
+    @media (max-width: 1100px) {
+        padding: 0px;
+        border: 0px;
+        margin: 40px 0px 0px 0px;
+        min-width: 100%;
+    }
+}

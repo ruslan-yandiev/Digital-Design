@@ -18,8 +18,10 @@ html(lang="en")
       //- хедер
       include ../blocks_modules/header/header
 
-      main(class=mainClass, style=mainStyle)
-        .wrapper-content
+      .wrapper-content
+        include ../blocks_modules/table-of-contentes/table-of-contentes
+        
+        main(class=mainClass, style=mainStyle)
           //- контент
           block content
 

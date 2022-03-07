@@ -3,6 +3,7 @@
 .header {
     position: relative;
     z-index: 50;
+    border-bottom: 1px solid $Purple;
 
     // .header__container
     &__container {
@@ -49,6 +50,7 @@
             height: 100%;
             left: 0;
             top: 0;
+            overflow: auto;
 
             padding: 130px 0px 20px 0px;
             opacity: 0;

@@ -3,6 +3,7 @@
 .table-of-contentes {
     font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+    text-align: center;
 
     ul {
         display: flex;
@@ -25,8 +26,8 @@
         max-width: 300px;
         position: fixed;
         right: 20px;
-
         border-left: 2px solid $Dark_Shade_25;
+        text-align: start;
 
         ul {
             display: block;

@@ -15,13 +15,18 @@ html(lang="en")
 
   body(class=pageClass)
     .wrapper
-      //- подключим хедер
+      //- хедер
+      include ../blocks_modules/header/header
 
-      main(class=mainClass, style=mainStyle)
-        .wrapper-content
-          //- основной контент
+      .wrapper-content
+        include ../blocks_modules/up-button/up-button
+        include ../blocks_modules/table-of-contentes/table-of-contentes
+        
+        main(class=mainClass, style=mainStyle)
+          //- контент
           block content
 
-      //- подключим футер
+      //- футер
+      include ../blocks_modules/footer/footer
 
     block script

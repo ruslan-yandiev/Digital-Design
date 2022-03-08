@@ -1,0 +1,74 @@
+@import '../../styles/style.scss';
+
+.up-button {
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    // border: 1px solid green;
+
+    @media (max-width: $md3+px) {
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+.up-button-arrow {
+    cursor: pointer;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    margin: 15px;
+    background-color: $Purple;
+    opacity: 0.6;
+    border-radius: 10%;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+    }
+}
+
+.up-button-arrow::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 21px;
+    top: 10px;
+    right: 14px;
+    background-color: $white;
+    transform: rotate(-45deg);
+}
+
+.up-button-arrow::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 21px;
+    top: 10px;
+    right: 26px;
+    background-color: $white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    transform: rotate(40deg);
+}
+
+.up-button-arrow:hover {
+    animation: up-button-arrow 1s linear infinite;
+}
+
+@keyframes up-button-arrow {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 15px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
